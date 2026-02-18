@@ -3,6 +3,10 @@ import App from "./App";
 import { certificates } from "./data/certificates";
 
 describe("App", () => {
+  const courseraCount = certificates.filter(
+    (certificate) => certificate.platform === "coursera"
+  ).length;
+
   it("shows all certificates by default", () => {
     render(<App />);
     expect(screen.getAllByRole("link", { name: "View credential" })).toHaveLength(
@@ -17,8 +21,10 @@ describe("App", () => {
       target: { value: "coursera" }
     });
 
-    expect(screen.getAllByRole("link", { name: "View credential" })).toHaveLength(3);
-    expect(screen.getByText("3 results")).toBeInTheDocument();
+    expect(screen.getAllByRole("link", { name: "View credential" })).toHaveLength(
+      courseraCount
+    );
+    expect(screen.getByText(`${courseraCount} results`)).toBeInTheDocument();
   });
 
   it("resets filters back to full list", () => {
