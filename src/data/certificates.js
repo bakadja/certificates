@@ -23,6 +23,7 @@ export const coreSkills = [
   "YAML",
   "Linux CLI (Basics)",
   "UI/UX Principles",
+  "Database Integration"
 ];
 
 export const certificates = [
@@ -278,5 +279,30 @@ export const certificates = [
     credentialUrl:
       "https://scrimba.com/u419350e:certs;cert24zAwPPowMrHNh3zB9TxRnDCk8TCviGfzbXQk",
     image: "/assets/certificates/scrimba/frontend.png",
+  },
+  {
+    id: "scrimba-fullstack-path",
+    title: "The Fullstack Developer Path",
+    platform: "scrimba",
+    issueDate: "2026-02-15",
+    durationHours: 108.4,
+    summary:
+      "Umfassendes Full-Stack-JavaScript-Programm mit Fokus auf moderner Frontend- und Backend-Entwicklung. Behandelt React, TypeScript, Node.js, Express, Next.js, Testing sowie API-Design und Datenbankintegration. Zusätzlich Einführung in KI-gestützte Anwendungskonzepte.",
+
+    skills: [
+      "Full-Stack Web Development",
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Express.js",
+      "Next.js",
+      "REST API",
+      "Database Integration",
+      "Testing",
+      "Responsive Design",
+    ],
+    credentialUrl:
+      "https://scrimba.com/u419350e:certs;cert23wfboWopMQD4Pea9vhPHQqSvwd1MMcJ892Gjzfn2TxmfEt8",
+    image: "/assets/certificates/scrimba/full-stack.png",
   },
 ];
