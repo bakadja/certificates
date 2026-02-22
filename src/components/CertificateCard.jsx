@@ -14,10 +14,11 @@ function titlePlatform(platform) {
 export default function CertificateCard({ certificate }) {
   const [imageError, setImageError] = useState(false);
   const issuedDate = useMemo(() => formatDate(certificate.issueDate), [certificate]);
+  const imageAspectRatio = certificate.previewAspectRatio ?? 16 / 9;
 
   return (
     <article className="certificate-card">
-      <div className="card-image-wrap">
+      <div className="card-image-wrap" style={{ "--card-image-ratio": `${imageAspectRatio}` }}>
         {imageError ? (
           <div className="image-fallback">Preview unavailable</div>
         ) : (
@@ -32,7 +33,7 @@ export default function CertificateCard({ certificate }) {
       </div>
 
       <div className="card-content">
-        <p className={`platform-badge platform-${certificate.platform}`}>
+        <p className={`platform-badge platform-${certificate.platform} card-inline-content`}>
          {certificate.issuer} {certificate.issuer && "|"} {titlePlatform(certificate.platform)}
         </p>
         <h3>{certificate.title}</h3>
@@ -48,7 +49,7 @@ export default function CertificateCard({ certificate }) {
           href={certificate.credentialUrl}
           target="_blank"
           rel="noreferrer"
-          className="credential-link"
+          className="credential-link card-inline-content"
         >
           View credential
         </a>

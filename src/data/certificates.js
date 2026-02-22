@@ -34,6 +34,7 @@ export const certificates = [
     platform: "coursera",
     issueDate: "2024-11-16",
     durationHours: 22,
+    previewAspectRatio: 1.2792,
     gradePercent: 100,
     skills: [
       "Usability",
@@ -63,6 +64,7 @@ export const certificates = [
     platform: "coursera",
     issueDate: "2024-10-29",
     durationHours: 26,
+    previewAspectRatio: 1.2818,
     gradePercent: 97.6,
     skills: [
       "REST-API Integration",
@@ -93,6 +95,7 @@ export const certificates = [
     platform: "coursera",
     issueDate: "2024-10-8",
     durationHours: 29,
+    previewAspectRatio: 1.2855,
     gradePercent: 100,
     skills: [
       "Event-Driven Programming",
@@ -123,6 +126,7 @@ export const certificates = [
     platform: "coursera",
     issueDate: "2024-06-6",
     durationHours: 46,
+    previewAspectRatio: 1.2835,
     gradePercent: 99.33,
     skills: [
       "Object Oriented Programming (OOP)",
@@ -150,6 +154,7 @@ export const certificates = [
     platform: "coursera",
     issueDate: "2024-06-6",
     durationHours: 30,
+    previewAspectRatio: 1.2861,
     gradePercent: 96.23,
     skills: [
       "Front-End Web Development",
@@ -178,6 +183,7 @@ export const certificates = [
     platform: "coursera",
     issueDate: "2024-06-7",
     durationHours: 15,
+    previewAspectRatio: 1.2795,
     gradePercent: 100,
     skills: [
       "Linux",
@@ -208,6 +214,7 @@ export const certificates = [
     platform: "coursera",
     issueDate: "2024-07-31",
     durationHours: 17,
+    previewAspectRatio: 1.2735,
     //gradePercent: 100,
     skills: [
       "Cloud-Native Computing",
@@ -235,6 +242,7 @@ export const certificates = [
     platform: "coursera",
     issueDate: "2024-07-18",
     durationHours: 13,
+    previewAspectRatio: 1.2842,
     //gradePercent: 100,
     skills: [
       "Middleware",
@@ -265,6 +273,7 @@ export const certificates = [
     platform: "scrimba",
     issueDate: "2026-02-15",
     durationHours: 81.6,
+    previewAspectRatio: 1.6232,
     skills: [
       "Frontend Development",
       "React",
@@ -286,6 +295,7 @@ export const certificates = [
     platform: "scrimba",
     issueDate: "2026-02-15",
     durationHours: 108.4,
+    previewAspectRatio: 1.7053,
     summary:
       "Umfassendes Full-Stack-JavaScript-Programm mit Fokus auf moderner Frontend- und Backend-Entwicklung. Behandelt React, TypeScript, Node.js, Express, Next.js, Testing sowie API-Design und Datenbankintegration. Zusätzlich Einführung in KI-gestützte Anwendungskonzepte.",
 
